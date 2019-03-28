@@ -11,6 +11,9 @@ namespace UnitTestExample.Core.Helpers.TestHelper
     {
         public TestModel DoWork(string input)
         {
+			if (input == null)
+				return null;
+
             return new TestModel
             {
                 Output = input
