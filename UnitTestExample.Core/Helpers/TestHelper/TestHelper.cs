@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnitTestExample.Core.Models;
+﻿using UnitTestExample.Core.Models;
 
 namespace UnitTestExample.Core.Helpers.TestHelper
 {
-    public class TestHelper : ITestHelper
+	/// <summary>
+	/// TestHelper class.  This class is meant to show a helper layer and provides easy mocking
+	/// </summary>
+	public class TestHelper : ITestHelper
     {
+		/// <summary>
+		/// Does an arbitrary task.  In this case, it just parrots back the input string
+		/// </summary>
+		/// <param name="input"></param>
+		/// <returns></returns>
         public TestModel DoWork(string input)
         {
 			if (input == null)
