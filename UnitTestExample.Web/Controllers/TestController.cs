@@ -30,6 +30,7 @@ namespace UnitTestExample.Web.Controllers
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
+		[HttpGet]
         public IHttpActionResult GetTest(string input)
         {
             try
